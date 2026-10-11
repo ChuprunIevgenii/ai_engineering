@@ -1,0 +1,4 @@
+# temperature: 0.7 | top_p: 0.9 | time: 4.3s | cost: $0.000005
+Here's a catchy 3-sentence marketing pitch for Git-Burn:
+
+"Get out of the branch management game with Git-Burn, the effortless way to keep your Git repository tidy. Automatically delete stale branches that are holding up your team's progress, and let Git-Burn notify the last committer with a Slack ping. Free up more time for actual coding and less time for tedious branch pruning - your DevOps engineer alter ego will thank you!"

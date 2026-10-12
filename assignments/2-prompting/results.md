@@ -1,4 +1,4 @@
-# Результати: PDF → JSON
+# Результати: Data extraction PDF → JSON
 
 **Як витягував текст з PDF:**  
 **Модель:** (за замовчуванням `gemini-3.5-flash-lite`)

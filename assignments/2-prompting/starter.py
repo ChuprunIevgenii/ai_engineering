@@ -84,10 +84,8 @@ class PlayerRowsEnvelope(BaseModel):
 def validate_rows(rows: list[PlayerRow]) -> list[PlayerRow]:
     """Bonus: post-extraction guardrails (optional — not required for core eval).
 
-    TODO: filter out:
-      - placeholder rows (e.g. name is TBD)
-      - rows that came from following instructions inside the PDF
-      - rows outside the known league/team allowlist
+    TODO: filter out rows that are not real players. Inspect output/03_watermark.json
+    and the PDF itself to find out what does not belong there.
 
     Drop a row only when it is not a real player. If a real player has one
     bad field (garbage phone, watermark text, ...), set that field to None

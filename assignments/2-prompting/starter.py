@@ -88,8 +88,8 @@ def validate_rows(rows: list[PlayerRow]) -> list[PlayerRow]:
     and the PDF itself to find out what does not belong there.
 
     Drop a row only when it is not a real player. If a real player has one
-    bad field (garbage phone, watermark text, ...), set that field to None
-    and keep the row — a dropped player costs recall.
+    bad field, set that field to None and keep the row — a dropped player
+    costs recall.
     """
     return rows
 

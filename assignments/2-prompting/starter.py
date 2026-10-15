@@ -163,6 +163,7 @@ def validate_rows(rows: list[PlayerRow]) -> list[PlayerRow]:
     costs recall.
     """
     placeholder_names = {"tbd", "tba", "n/a", "unknown", "—", "-"}
+    injected_names = {"rick roll", "rick astley"}  # імена з prompt injection у документі
     text_fields = ("league", "team", "name", "position", "nationality", "phone", "address")
 
     def has_digit(s: str) -> bool:
@@ -184,8 +185,8 @@ def validate_rows(rows: list[PlayerRow]) -> list[PlayerRow]:
         fix = {f: clean(getattr(r, f)) for f in text_fields}
         name = (fix["name"] or "").lower()
 
-        # 1. Не гравець: заглушка або від імені нічого не лишилось після чистки
-        if name in placeholder_names or not has_letter(name):
+        # 1. Не гравець: заглушка, підкинуте ім'я або від імені нічого не лишилось після чистки
+        if name in placeholder_names or name in injected_names or not has_letter(name):
             continue
 
         # 2. Не гравець: обидва контакти заповнені текстом без жодної цифри (Rick Roll)

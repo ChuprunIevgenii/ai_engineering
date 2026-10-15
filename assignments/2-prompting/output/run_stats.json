@@ -19,8 +19,8 @@
   },
   "03_watermark": {
     "model": "openrouter/google/gemini-3.5-flash-lite",
-    "time_s": 19.1,
-    "cost_usd": 0.02396724,
+    "time_s": 19.4,
+    "cost_usd": 0.0250467,
     "prompt_tokens": 5839,
     "completion_tokens": 9318,
     "reasoning_tokens": 0,

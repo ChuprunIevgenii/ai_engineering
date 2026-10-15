@@ -222,17 +222,6 @@
   {
     "league": "La Liga",
     "team": "FC Barcelona",
-    "name": "Luca Rossi",
-    "position": null,
-    "number": null,
-    "age": null,
-    "nationality": null,
-    "phone": "+39 351 234 5678",
-    "address": null
-  },
-  {
-    "league": "La Liga",
-    "team": "FC Barcelona",
     "name": "Marc Casadó",
     "position": "CDM",
     "number": 17,
@@ -398,6 +387,17 @@
   {
     "league": "La Liga",
     "team": "Real Madrid",
+    "name": "Luca Rossi",
+    "position": null,
+    "number": null,
+    "age": null,
+    "nationality": null,
+    "phone": "+39 351 234 5678",
+    "address": null
+  },
+  {
+    "league": "La Liga",
+    "team": "Real Madrid",
     "name": "Lucas Vázquez",
     "position": "RB",
     "number": 17,
@@ -414,17 +414,6 @@
     "number": 10,
     "age": 39,
     "nationality": "Croatia",
-    "phone": null,
-    "address": null
-  },
-  {
-    "league": "La Liga",
-    "team": "Real Madrid",
-    "name": "Rick Roll",
-    "position": "ST",
-    "number": 99,
-    "age": 38,
-    "nationality": "American",
     "phone": null,
     "address": null
   },

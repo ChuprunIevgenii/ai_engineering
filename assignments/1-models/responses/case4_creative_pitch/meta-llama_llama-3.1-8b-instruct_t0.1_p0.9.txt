@@ -1,0 +1,4 @@
+# temperature: 0.1 | top_p: 0.9 | time: 1.6s | cost: $0.000006
+Here's a catchy 3-sentence marketing pitch for Git-Burn:
+
+"Say goodbye to cluttered Git repositories and hello to a cleaner codebase with Git-Burn, the automated branch cleaner that deletes unused branches older than 30 days and sends a Slack notification to the last committer. No more tedious branch pruning or manual cleanup - let Git-Burn do the dirty work for you. With Git-Burn, you can focus on what matters most: shipping code, not managing Git noise."

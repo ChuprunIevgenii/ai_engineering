@@ -55,7 +55,7 @@ litellm.suppress_debug_info = True
 litellm.request_timeout = 60
 
 MODEL_AGENT = "openrouter/google/gemini-3.5-flash-lite"
-MODEL_JUDGE = "openrouter/openai/gpt-5.6-terra"
+MODEL_JUDGE = "openrouter/anthropic/claude-haiku-5.5"
 NUM_TEST_CASES = 20
 MIN_LABELS = 20
 BOOTSTRAP_SAMPLES = 5000

@@ -1,7 +1,7 @@
 # Результати — HW4: Eval Pipeline для агента підтримки
 
 **Модель агента:** `openrouter/google/gemini-3.5-flash-lite`  
-**Модель судді:** `openrouter/openai/gpt-5.6-terra`  
+**Модель судді:** `openrouter/anthropic/claude-haiku-5.5`  
 **Розмір наборів:** dev = … кейсів, test = … кейсів
 
 ---

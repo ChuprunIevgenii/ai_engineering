@@ -1,0 +1,47 @@
+{
+  "01_split_headers": {
+    "model": "openrouter/google/gemini-3.5-flash-lite",
+    "time_s": 17.8,
+    "cost_usd": 0.0240686,
+    "prompt_tokens": 5537,
+    "completion_tokens": 8963,
+    "reasoning_tokens": 0,
+    "finish_reason": "stop"
+  },
+  "02_vertical_header": {
+    "model": "openrouter/google/gemini-3.5-flash-lite",
+    "time_s": 15.9,
+    "cost_usd": 0.0240641,
+    "prompt_tokens": 5572,
+    "completion_tokens": 8957,
+    "reasoning_tokens": 0,
+    "finish_reason": "stop"
+  },
+  "03_watermark": {
+    "model": "openrouter/google/gemini-3.5-flash-lite",
+    "time_s": 19.4,
+    "cost_usd": 0.0250467,
+    "prompt_tokens": 5839,
+    "completion_tokens": 9318,
+    "reasoning_tokens": 0,
+    "finish_reason": "stop"
+  },
+  "04_list_roster": {
+    "model": "openrouter/google/gemini-3.5-flash-lite",
+    "time_s": 15.2,
+    "cost_usd": 0.0238318,
+    "prompt_tokens": 4756,
+    "completion_tokens": 8962,
+    "reasoning_tokens": 0,
+    "finish_reason": "stop"
+  },
+  "05_album_sheet": {
+    "model": "openrouter/google/gemini-3.5-flash-lite",
+    "time_s": 8.2,
+    "cost_usd": 0.0112829,
+    "prompt_tokens": 3068,
+    "completion_tokens": 4145,
+    "reasoning_tokens": 0,
+    "finish_reason": "stop"
+  }
+}

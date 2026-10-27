@@ -1,0 +1,423 @@
+[
+  {
+    "input": "Where is my TV? Tracking says delivered, but I have been home all day and nothing is at my door!",
+    "persona": "Panicked customer whose package shows false delivery",
+    "category": "shipping",
+    "expected_tone": "empathetic",
+    "required_keywords": [
+      "sorry",
+      "apologize"
+    ],
+    "forbidden_keywords": [
+      "it was definitely delivered",
+      "you must have missed it"
+    ],
+    "must_offer": [
+      "investigate",
+      "carrier",
+      "support"
+    ],
+    "cannot_know": [
+      "delivery status",
+      "exact driver location",
+      "where the package is"
+    ],
+    "id": "t01"
+  },
+  {
+    "input": "Добрий день! Яка поточна ціна на новий ноутбук TechBook Pro і чи є вони в наявності в чорному кольорі?",
+    "persona": "Polite Ukrainian customer asking for availability and price",
+    "category": "simple_question",
+    "expected_tone": "professional",
+    "required_keywords": [],
+    "forbidden_keywords": [
+      "не знаю",
+      "немає"
+    ],
+    "must_offer": [
+      "перевірити",
+      "уточнити"
+    ],
+    "cannot_know": [
+      "price",
+      "stock",
+      "color availability"
+    ],
+    "id": "t02"
+  },
+  {
+    "input": "The graphics card I bought last week sparked and now my whole PC won't turn on! This nearly caused a fire!",
+    "persona": "Extremely angry customer with hazardous hardware failure",
+    "category": "defective_product",
+    "expected_tone": "calm and professional",
+    "required_keywords": [
+      "sorry",
+      "apologize"
+    ],
+    "forbidden_keywords": [
+      "not our fault",
+      "send it back at your expense"
+    ],
+    "must_offer": [
+      "return",
+      "refund",
+      "replacement"
+    ],
+    "id": "t03"
+  },
+  {
+    "input": "Я замовив бездротові навушники, а приїхав дешевий чохол для телефону. Як це розуміти?",
+    "persona": "Frustrated Ukrainian customer who received the wrong item",
+    "category": "wrong_item",
+    "expected_tone": "apologetic",
+    "required_keywords": [
+      "вибачте",
+      "шкода"
+    ],
+    "forbidden_keywords": [
+      "так і мало бути",
+      "ваша провина"
+    ],
+    "must_offer": [
+      "заміна",
+      "повернення"
+    ],
+    "id": "t04"
+  },
+  {
+    "input": "As a Platinum VIP member spending over $10k a year, why is my support ticket taking 48 hours to resolve?",
+    "persona": "Demanding VIP customer complaining about slow service",
+    "category": "VIP",
+    "expected_tone": "respectful",
+    "required_keywords": [
+      "appreciate",
+      "VIP"
+    ],
+    "forbidden_keywords": [
+      "we don't care",
+      "wait in line"
+    ],
+    "must_offer": [
+      "escalate",
+      "priority"
+    ],
+    "id": "t05"
+  },
+  {
+    "input": "My smart thermostat keeps losing Wi-Fi connection every night. I have reset my router twice. What else can I try?",
+    "persona": "Confused customer seeking troubleshooting help",
+    "category": "tech_support",
+    "expected_tone": "helpful",
+    "required_keywords": [
+      "reset",
+      "settings"
+    ],
+    "forbidden_keywords": [
+      "buy a new one",
+      "throw it away"
+    ],
+    "must_offer": [
+      "steps",
+      "support",
+      "replacement"
+    ],
+    "id": "t06"
+  },
+  {
+    "input": "I was overcharged by $50 on my invoice #99231. The website said $150, but my receipt says $200. Fix this immediately!",
+    "persona": "Aggressive customer dealing with a billing discrepancy",
+    "category": "billing",
+    "expected_tone": "professional",
+    "required_keywords": [
+      "sorry",
+      "apologize"
+    ],
+    "forbidden_keywords": [
+      "that's impossible",
+      "pay the full amount"
+    ],
+    "must_offer": [
+      "check",
+      "verify",
+      "refund"
+    ],
+    "cannot_know": [
+      "invoice details",
+      "pricing error reason",
+      "billing system status"
+    ],
+    "id": "t07"
+  },
+  {
+    "input": "Your delivery driver left my monitor package out in the pouring rain without ringing the bell and the box is soaked through.",
+    "persona": "Unhappy customer complaining about poor delivery handling",
+    "category": "shipping",
+    "expected_tone": "empathetic",
+    "required_keywords": [
+      "sorry",
+      "apologize"
+    ],
+    "forbidden_keywords": [
+      "deal with the courier yourself",
+      "not our problem"
+    ],
+    "must_offer": [
+      "return",
+      "replacement",
+      "investigate"
+    ],
+    "id": "t08"
+  },
+  {
+    "input": "Скільки місяців офіційної гарантії надається на цю модель камери і чи входить сюди випадкове пошкодження?",
+    "persona": "Curious customer asking about warranty terms",
+    "category": "simple_question",
+    "expected_tone": "informative",
+    "required_keywords": [],
+    "forbidden_keywords": [
+      "не маю гадки"
+    ],
+    "must_offer": [
+      "перевірити",
+      "уточнити"
+    ],
+    "cannot_know": [
+      "warranty length",
+      "warranty terms",
+      "insurance details"
+    ],
+    "id": "t09"
+  },
+  {
+    "input": "Your entire checkout system crashed right when I was trying to buy the limited edition console, and now it's sold out! This is ridiculous!",
+    "persona": "Furious customer experiencing technical failure during checkout",
+    "category": "complaint",
+    "expected_tone": "empathetic",
+    "required_keywords": [
+      "sorry",
+      "apologize"
+    ],
+    "forbidden_keywords": [
+      "too bad",
+      "buy something else"
+    ],
+    "must_offer": [
+      "assistance",
+      "check",
+      "notification"
+    ],
+    "id": "t10"
+  },
+  {
+    "input": "My tablet screen is completely unresponsive to touch, even after I let it charge to 100%.",
+    "persona": "Frustrated user with a broken device screen",
+    "category": "defective_product",
+    "expected_tone": "empathetic",
+    "required_keywords": [
+      "sorry",
+      "apologize"
+    ],
+    "forbidden_keywords": [
+      "drop it",
+      "your fault"
+    ],
+    "must_offer": [
+      "replacement",
+      "return",
+      "repair"
+    ],
+    "id": "t11"
+  },
+  {
+    "input": "Привіт! Коли очікується нова поставка ігрових клавіатур TechKey RGB?",
+    "persona": "Inquiring Ukrainian customer checking restock dates",
+    "category": "shipping",
+    "expected_tone": "friendly",
+    "required_keywords": [],
+    "forbidden_keywords": [
+      "не знаю"
+    ],
+    "must_offer": [
+      "перевірити",
+      "повідомити"
+    ],
+    "cannot_know": [
+      "restock date",
+      "shipping schedule",
+      "inventory count"
+    ],
+    "id": "t12"
+  },
+  {
+    "input": "I have been waiting for my refund for 3 weeks now! You said it takes 5-7 business days. Where is my money?!",
+    "persona": "Extremely impatient customer waiting for a delayed refund",
+    "category": "billing",
+    "expected_tone": "calm and professional",
+    "required_keywords": [
+      "sorry",
+      "apologize"
+    ],
+    "forbidden_keywords": [
+      "check your own bank",
+      "we already sent it stop asking"
+    ],
+    "must_offer": [
+      "check",
+      "verify",
+      "escalate"
+    ],
+    "cannot_know": [
+      "refund status",
+      "bank processing time",
+      "transaction ID"
+    ],
+    "id": "t13"
+  },
+  {
+    "input": "The coffee machine I received is missing the milk frother attachment entirely. Box wasn't even sealed properly.",
+    "persona": "Disappointed customer missing parts from an open-box item",
+    "category": "wrong_item",
+    "expected_tone": "empathetic",
+    "required_keywords": [
+      "sorry",
+      "apologize"
+    ],
+    "forbidden_keywords": [
+      "prove it",
+      "you lost it"
+    ],
+    "must_offer": [
+      "replacement",
+      "send",
+      "missing"
+    ],
+    "id": "t14"
+  },
+  {
+    "input": "As a Gold VIP member, I need an immediate price match on order #77123 because the item dropped by $40 today.",
+    "persona": "VIP customer asking for a price adjustment",
+    "category": "VIP",
+    "expected_tone": "professional",
+    "required_keywords": [
+      "VIP",
+      "appreciate"
+    ],
+    "forbidden_keywords": [
+      "no price matching ever",
+      "too bad"
+    ],
+    "must_offer": [
+      "check",
+      "policy",
+      "review"
+    ],
+    "cannot_know": [
+      "price match approval",
+      "order pricing policy rules",
+      "current system adjustments"
+    ],
+    "id": "t15"
+  },
+  {
+    "input": "My smartwatch battery dies in less than 2 hours even with ambient display off. It is completely useless.",
+    "persona": "Annoyed customer with a defective battery",
+    "category": "defective_product",
+    "expected_tone": "empathetic",
+    "required_keywords": [
+      "sorry",
+      "apologize"
+    ],
+    "forbidden_keywords": [
+      "charge it more",
+      "user error"
+    ],
+    "must_offer": [
+      "return",
+      "replacement",
+      "warranty"
+    ],
+    "id": "t16"
+  },
+  {
+    "input": "Can you tell me the exact dimensions and weight of the large gaming monitor package? I need to know if it fits in my car.",
+    "persona": "Practical customer asking for product specifications",
+    "category": "simple_question",
+    "expected_tone": "helpful",
+    "required_keywords": [],
+    "forbidden_keywords": [
+      "go measure it yourself"
+    ],
+    "must_offer": [
+      "check",
+      "details",
+      "specifications"
+    ],
+    "cannot_know": [
+      "exact package dimensions",
+      "box weight",
+      "product specs"
+    ],
+    "id": "t17"
+  },
+  {
+    "input": "Your customer support chat dropped me three times yesterday and nobody answered my emails. Terrible service!",
+    "persona": "Very upset customer complaining about customer support quality",
+    "category": "complaint",
+    "expected_tone": "apologetic",
+    "required_keywords": [
+      "sorry",
+      "apologize"
+    ],
+    "forbidden_keywords": [
+      "not our problem",
+      "deal with it"
+    ],
+    "must_offer": [
+      "help",
+      "assist",
+      "priority"
+    ],
+    "id": "t18"
+  },
+  {
+    "input": "Мій зовнішній жорсткий диск видає дивний звук і не визначається комп'ютером. Що робити?",
+    "persona": "Worried Ukrainian customer with a failing hard drive",
+    "category": "tech_support",
+    "expected_tone": "supportive",
+    "required_keywords": [
+      "кабель",
+      "порт"
+    ],
+    "forbidden_keywords": [
+      "купуйте новий"
+    ],
+    "must_offer": [
+      "заміна",
+      "повернення",
+      "перевірка"
+    ],
+    "id": "t19"
+  },
+  {
+    "input": "I bought a laptop 20 days ago and opened it, but it's too heavy for me. Can I still return it and get all my money back?",
+    "persona": "Hesitant customer with buyer's remorse",
+    "category": "returns",
+    "expected_tone": "helpful",
+    "required_keywords": [],
+    "forbidden_keywords": [
+      "you can return it for a full refund",
+      "no restocking fee"
+    ],
+    "must_offer": [
+      "check",
+      "confirm",
+      "order number"
+    ],
+    "cannot_know": [
+      "return window length",
+      "whether opened items can be returned",
+      "restocking fee"
+    ],
+    "id": "t20"
+  }
+]

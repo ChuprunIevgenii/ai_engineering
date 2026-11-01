@@ -1,0 +1,202 @@
+[
+ {
+  "text": "My order #48213 is two weeks late and the tracking hasn't updated at all.",
+  "category": "shipping",
+  "ident": "#48213"
+ },
+ {
+  "text": "Where is package #48231? It was supposed to arrive last Monday and it's missing.",
+  "category": "shipping",
+  "ident": "#48231"
+ },
+ {
+  "text": "Order #48312 still hasn't shown up yet and the delivery date passed days ago.",
+  "category": "shipping",
+  "ident": "#48312"
+ },
+ {
+  "text": "I am still waiting for order #43821 to be delivered. It is severely delayed.",
+  "category": "shipping",
+  "ident": "#43821"
+ },
+ {
+  "text": "My receipts won't upload at all and this error E-4012 pops up every single time.",
+  "category": "technical",
+  "ident": "E-4012"
+ },
+ {
+  "text": "Every time I try to sync my offline data, error E-4017 stops the process immediately.",
+  "category": "technical",
+  "ident": "E-4017"
+ },
+ {
+  "text": "The app crashes during the photo sync and shows error code E-4102 on my screen.",
+  "category": "technical",
+  "ident": "E-4102"
+ },
+ {
+  "text": "Backup failed again today and I keep seeing error E-4120 when it tries to sync.",
+  "category": "technical",
+  "ident": "E-4120"
+ },
+ {
+  "text": "You charged my card twice for invoice INV-2026-0931. Please issue an immediate refund.",
+  "category": "billing",
+  "ident": "INV-2026-0931"
+ },
+ {
+  "text": "My bank statement shows a double payment for INV-2026-0913. I need this fixed today.",
+  "category": "billing",
+  "ident": "INV-2026-0913"
+ },
+ {
+  "text": "I was billed the incorrect amount on INV-2026-1931 and need the extra charge reversed.",
+  "category": "billing",
+  "ident": "INV-2026-1931"
+ },
+ {
+  "text": "Why was I hit with two separate charges for invoice INV-2025-0931 this month?",
+  "category": "billing",
+  "ident": "INV-2025-0931"
+ },
+ {
+  "text": "Where is my refund for RMA-77310? I sent the jacket back two weeks ago and heard nothing.",
+  "category": "returns",
+  "ident": "RMA-77310"
+ },
+ {
+  "text": "Checking on RMA-77301 please. My returned items were delivered last week but no refund yet.",
+  "category": "returns",
+  "ident": "RMA-77301"
+ },
+ {
+  "text": "Need a status update on return authorization RMA-73710. When will the money hit my account?",
+  "category": "returns",
+  "ident": "RMA-73710"
+ },
+ {
+  "text": "I still haven't received my refund for the shoes I returned under RMA-77130. Can you check?",
+  "category": "returns",
+  "ident": "RMA-77130"
+ },
+ {
+  "text": "My AX-3000 keeps dropping the wifi connection every few minutes throughout the whole house.",
+  "category": "technical",
+  "ident": "AX-3000"
+ },
+ {
+  "text": "The wifi keeps disconnecting on my AX-5400 router multiple times a day without warning.",
+  "category": "technical",
+  "ident": "AX-5400"
+ },
+ {
+  "text": "Why does my AX-1800 drop the wireless signal constantly? It is getting very frustrating.",
+  "category": "technical",
+  "ident": "AX-1800"
+ },
+ {
+  "text": "I am having issues where the AX-6000 drops wifi connectivity randomly during online meetings.",
+  "category": "technical",
+  "ident": "AX-6000"
+ },
+ {
+  "text": "I cannot log into my account today, the website keeps throwing error AUTH-401.",
+  "category": "account",
+  "ident": "AUTH-401"
+ },
+ {
+  "text": "Every time I try to sign in, the page fails and shows error AUTH-403 instead.",
+  "category": "account",
+  "ident": "AUTH-403"
+ },
+ {
+  "text": "My password is correct, but the login fails and displays AUTH-429 on the screen.",
+  "category": "account",
+  "ident": "AUTH-429"
+ },
+ {
+  "text": "I am locked out because the portal fails to authenticate me and gives error AUTH-419.",
+  "category": "account",
+  "ident": "AUTH-419"
+ },
+ {
+  "text": "Ever since the firmware 2.4.1 update yesterday, my smart plug keeps randomly disconnecting from the Wi-Fi.",
+  "category": "technical",
+  "ident": "2.4.1"
+ },
+ {
+  "text": "My security camera stopped recording motion events completely following the firmware 2.4.11 installation last night.",
+  "category": "technical",
+  "ident": "2.4.11"
+ },
+ {
+  "text": "Since updating to firmware 2.1.4 this morning, the thermostat screen freezes whenever I try to adjust temperature.",
+  "category": "technical",
+  "ident": "2.1.4"
+ },
+ {
+  "text": "The router reboots itself every ten minutes now ever since I applied firmware 4.2.1 earlier today.",
+  "category": "technical",
+  "ident": "4.2.1"
+ },
+ {
+  "text": "I tried entering SPRING25 at checkout, but the discount never showed up on my order total.",
+  "category": "billing",
+  "ident": "SPRING25"
+ },
+ {
+  "text": "My cart didn't update when I typed in SAVE10, so I was charged full price.",
+  "category": "billing",
+  "ident": "SAVE10"
+ },
+ {
+  "text": "The WELCOME15 promo code failed to apply to my purchase even though it's valid.",
+  "category": "billing",
+  "ident": "WELCOME15"
+ },
+ {
+  "text": "Why didn't FALL30 work when I put it in the discount box just now?",
+  "category": "billing",
+  "ident": "FALL30"
+ },
+ {
+  "text": "My package 1Z84E2930412 has been stuck in transit for six days with zero tracking updates.",
+  "category": "shipping",
+  "ident": "1Z84E2930412"
+ },
+ {
+  "text": "Where is my package? Tracking 1Z84E2930421 hasn't changed or updated in over a week.",
+  "category": "shipping",
+  "ident": "1Z84E2930421"
+ },
+ {
+  "text": "Tracking 1Z48E2930412 shows no movement at all for five days now. Is it lost?",
+  "category": "shipping",
+  "ident": "1Z48E2930412"
+ },
+ {
+  "text": "Why hasn't 1Z84E9230412 updated? It has been sitting at the same facility for four days straight.",
+  "category": "shipping",
+  "ident": "1Z84E9230412"
+ },
+ {
+  "text": "I ordered a black phone case, but SKU-55120 arrived in the wrong color entirely.",
+  "category": "returns",
+  "ident": "SKU-55120"
+ },
+ {
+  "text": "The box for SKU-55102 contained a completely different jacket than the one I actually bought.",
+  "category": "returns",
+  "ident": "SKU-55102"
+ },
+ {
+  "text": "You sent me the wrong size and style for SKU-51520, please fix this quickly.",
+  "category": "returns",
+  "ident": "SKU-51520"
+ },
+ {
+  "text": "I received the wrong item in my package today when I ordered SKU-55210.",
+  "category": "returns",
+  "ident": "SKU-55210"
+ }
+]

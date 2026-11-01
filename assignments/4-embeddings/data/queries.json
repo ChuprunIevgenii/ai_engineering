@@ -1,0 +1,1257 @@
+[
+ {
+  "qid": "x00",
+  "type": "exact",
+  "query": "any update on order #48213?",
+  "relevant": {
+   "300": 2
+  }
+ },
+ {
+  "qid": "x01",
+  "type": "exact",
+  "query": "where is order #48231",
+  "relevant": {
+   "301": 2
+  }
+ },
+ {
+  "qid": "x02",
+  "type": "exact",
+  "query": "any update on order #48312?",
+  "relevant": {
+   "302": 2
+  }
+ },
+ {
+  "qid": "x03",
+  "type": "exact",
+  "query": "where is order #43821",
+  "relevant": {
+   "303": 2
+  }
+ },
+ {
+  "qid": "x04",
+  "type": "exact",
+  "query": "what does error E-4012 mean",
+  "relevant": {
+   "304": 2
+  }
+ },
+ {
+  "qid": "x05",
+  "type": "exact",
+  "query": "app keeps showing error E-4017",
+  "relevant": {
+   "305": 2
+  }
+ },
+ {
+  "qid": "x06",
+  "type": "exact",
+  "query": "what does error E-4102 mean",
+  "relevant": {
+   "306": 2
+  }
+ },
+ {
+  "qid": "x07",
+  "type": "exact",
+  "query": "app keeps showing error E-4120",
+  "relevant": {
+   "307": 2
+  }
+ },
+ {
+  "qid": "x08",
+  "type": "exact",
+  "query": "wrong charge on invoice INV-2026-0931",
+  "relevant": {
+   "308": 2
+  }
+ },
+ {
+  "qid": "x09",
+  "type": "exact",
+  "query": "problem with invoice INV-2026-0913",
+  "relevant": {
+   "309": 2
+  }
+ },
+ {
+  "qid": "x10",
+  "type": "exact",
+  "query": "wrong charge on invoice INV-2026-1931",
+  "relevant": {
+   "310": 2
+  }
+ },
+ {
+  "qid": "x11",
+  "type": "exact",
+  "query": "problem with invoice INV-2025-0931",
+  "relevant": {
+   "311": 2
+  }
+ },
+ {
+  "qid": "x12",
+  "type": "exact",
+  "query": "status of return RMA-77310",
+  "relevant": {
+   "312": 2
+  }
+ },
+ {
+  "qid": "x13",
+  "type": "exact",
+  "query": "refund for RMA-77301 not received",
+  "relevant": {
+   "313": 2
+  }
+ },
+ {
+  "qid": "x14",
+  "type": "exact",
+  "query": "status of return RMA-73710",
+  "relevant": {
+   "314": 2
+  }
+ },
+ {
+  "qid": "x15",
+  "type": "exact",
+  "query": "refund for RMA-77130 not received",
+  "relevant": {
+   "315": 2
+  }
+ },
+ {
+  "qid": "x16",
+  "type": "exact",
+  "query": "AX-3000 keeps disconnecting",
+  "relevant": {
+   "316": 2
+  }
+ },
+ {
+  "qid": "x17",
+  "type": "exact",
+  "query": "AX-5400 wifi drops",
+  "relevant": {
+   "317": 2
+  }
+ },
+ {
+  "qid": "x18",
+  "type": "exact",
+  "query": "AX-1800 keeps disconnecting",
+  "relevant": {
+   "318": 2
+  }
+ },
+ {
+  "qid": "x19",
+  "type": "exact",
+  "query": "AX-6000 wifi drops",
+  "relevant": {
+   "319": 2
+  }
+ },
+ {
+  "qid": "x20",
+  "type": "exact",
+  "query": "login error AUTH-401",
+  "relevant": {
+   "320": 2
+  }
+ },
+ {
+  "qid": "x21",
+  "type": "exact",
+  "query": "can't sign in, getting AUTH-403",
+  "relevant": {
+   "321": 2
+  }
+ },
+ {
+  "qid": "x22",
+  "type": "exact",
+  "query": "login error AUTH-429",
+  "relevant": {
+   "322": 2
+  }
+ },
+ {
+  "qid": "x23",
+  "type": "exact",
+  "query": "can't sign in, getting AUTH-419",
+  "relevant": {
+   "323": 2
+  }
+ },
+ {
+  "qid": "x24",
+  "type": "exact",
+  "query": "problems after firmware 2.4.1",
+  "relevant": {
+   "324": 2
+  }
+ },
+ {
+  "qid": "x25",
+  "type": "exact",
+  "query": "firmware 2.4.11 issue",
+  "relevant": {
+   "325": 2
+  }
+ },
+ {
+  "qid": "x26",
+  "type": "exact",
+  "query": "problems after firmware 2.1.4",
+  "relevant": {
+   "326": 2
+  }
+ },
+ {
+  "qid": "x27",
+  "type": "exact",
+  "query": "firmware 4.2.1 issue",
+  "relevant": {
+   "327": 2
+  }
+ },
+ {
+  "qid": "x28",
+  "type": "exact",
+  "query": "promo code SPRING25 not working",
+  "relevant": {
+   "328": 2
+  }
+ },
+ {
+  "qid": "x29",
+  "type": "exact",
+  "query": "SAVE10 discount didn't apply",
+  "relevant": {
+   "329": 2
+  }
+ },
+ {
+  "qid": "x30",
+  "type": "exact",
+  "query": "promo code WELCOME15 not working",
+  "relevant": {
+   "330": 2
+  }
+ },
+ {
+  "qid": "x31",
+  "type": "exact",
+  "query": "FALL30 discount didn't apply",
+  "relevant": {
+   "331": 2
+  }
+ },
+ {
+  "qid": "x32",
+  "type": "exact",
+  "query": "tracking 1Z84E2930412 no updates",
+  "relevant": {
+   "332": 2
+  }
+ },
+ {
+  "qid": "x33",
+  "type": "exact",
+  "query": "where is package 1Z84E2930421",
+  "relevant": {
+   "333": 2
+  }
+ },
+ {
+  "qid": "x34",
+  "type": "exact",
+  "query": "tracking 1Z48E2930412 no updates",
+  "relevant": {
+   "334": 2
+  }
+ },
+ {
+  "qid": "x35",
+  "type": "exact",
+  "query": "where is package 1Z84E9230412",
+  "relevant": {
+   "335": 2
+  }
+ },
+ {
+  "qid": "x36",
+  "type": "exact",
+  "query": "wrong item for SKU-55120",
+  "relevant": {
+   "336": 2
+  }
+ },
+ {
+  "qid": "x37",
+  "type": "exact",
+  "query": "SKU-55102 arrived wrong",
+  "relevant": {
+   "337": 2
+  }
+ },
+ {
+  "qid": "x38",
+  "type": "exact",
+  "query": "wrong item for SKU-51520",
+  "relevant": {
+   "338": 2
+  }
+ },
+ {
+  "qid": "x39",
+  "type": "exact",
+  "query": "SKU-55210 arrived wrong",
+  "relevant": {
+   "339": 2
+  }
+ },
+ {
+  "qid": "s00",
+  "type": "semantic",
+  "query": "How to add my husband to my account",
+  "relevant": {
+   "14": 1,
+   "20": 2,
+   "29": 1,
+   "40": 1,
+   "41": 1,
+   "240": 1
+  }
+ },
+ {
+  "qid": "s01",
+  "type": "semantic",
+  "query": "avatar photo stuck loading indefinitely",
+  "relevant": {
+   "9": 2,
+   "19": 1,
+   "87": 1,
+   "304": 1,
+   "306": 1
+  }
+ },
+ {
+  "qid": "s02",
+  "type": "semantic",
+  "query": "how to enable biometric login without passwords",
+  "relevant": {
+   "0": 1,
+   "1": 1,
+   "2": 1,
+   "3": 1,
+   "11": 1,
+   "15": 1,
+   "16": 1,
+   "17": 1,
+   "25": 2,
+   "32": 1,
+   "33": 1,
+   "38": 1,
+   "220": 2,
+   "254": 2,
+   "320": 1,
+   "321": 1,
+   "322": 1,
+   "323": 1
+  }
+ },
+ {
+  "qid": "s03",
+  "type": "semantic",
+  "query": "Not receiving login verification text messages on mobile",
+  "relevant": {
+   "1": 1,
+   "2": 1,
+   "3": 2,
+   "4": 2,
+   "11": 1,
+   "12": 1,
+   "15": 1,
+   "16": 1,
+   "17": 1,
+   "19": 1,
+   "24": 1,
+   "32": 1,
+   "37": 1,
+   "38": 1,
+   "220": 1,
+   "254": 1,
+   "320": 1,
+   "321": 1,
+   "322": 1
+  }
+ },
+ {
+  "qid": "s04",
+  "type": "semantic",
+  "query": "Why is my confirmation text message delayed?",
+  "relevant": {
+   "4": 2,
+   "55": 1,
+   "92": 1,
+   "161": 1,
+   "214": 1
+  }
+ },
+ {
+  "qid": "s05",
+  "type": "semantic",
+  "query": "Alert preferences revert back after clicking save",
+  "relevant": {
+   "22": 1,
+   "28": 1,
+   "34": 2,
+   "42": 1,
+   "92": 1,
+   "113": 1,
+   "128": 1,
+   "281": 1,
+   "325": 1
+  }
+ },
+ {
+  "qid": "s06",
+  "type": "semantic",
+  "query": "Change the mobile number used for account access",
+  "relevant": {
+   "2": 1,
+   "5": 1,
+   "6": 2,
+   "8": 1,
+   "10": 1,
+   "20": 1,
+   "21": 1,
+   "26": 1,
+   "29": 1,
+   "33": 1,
+   "41": 1,
+   "294": 1,
+   "323": 1
+  }
+ },
+ {
+  "qid": "s07",
+  "type": "semantic",
+  "query": "change billing address on past invoice",
+  "relevant": {
+   "48": 1,
+   "54": 1,
+   "64": 1,
+   "66": 2,
+   "77": 1,
+   "78": 1,
+   "132": 1,
+   "144": 1,
+   "160": 1,
+   "308": 1,
+   "310": 1,
+   "311": 1
+  }
+ },
+ {
+  "qid": "s08",
+  "type": "semantic",
+  "query": "How to get money back for accidental double billing",
+  "relevant": {
+   "43": 2,
+   "50": 1,
+   "52": 1,
+   "55": 1,
+   "62": 1,
+   "65": 1,
+   "69": 1,
+   "70": 1,
+   "73": 1,
+   "75": 1,
+   "76": 1,
+   "80": 2,
+   "190": 1,
+   "211": 1,
+   "308": 2,
+   "309": 2,
+   "310": 1,
+   "311": 2,
+   "312": 1,
+   "314": 1
+  }
+ },
+ {
+  "qid": "s09",
+  "type": "semantic",
+  "query": "Why am I being billed for something unknown?",
+  "relevant": {
+   "43": 1,
+   "46": 2,
+   "47": 2,
+   "48": 1,
+   "52": 1,
+   "53": 1,
+   "57": 1,
+   "61": 1,
+   "62": 1,
+   "66": 1,
+   "67": 1,
+   "69": 1,
+   "70": 1,
+   "73": 1,
+   "76": 1,
+   "84": 1,
+   "85": 1,
+   "200": 1,
+   "308": 1,
+   "310": 1,
+   "311": 1,
+   "331": 1
+  }
+ },
+ {
+  "qid": "s10",
+  "type": "semantic",
+  "query": "Refund sent to closed bank account",
+  "relevant": {
+   "50": 1,
+   "55": 1,
+   "75": 2,
+   "80": 1,
+   "82": 1,
+   "175": 1,
+   "185": 1,
+   "190": 2,
+   "192": 1,
+   "201": 1,
+   "211": 1,
+   "312": 1,
+   "315": 1
+  }
+ },
+ {
+  "qid": "s11",
+  "type": "semantic",
+  "query": "How to download detailed invoices for past orders",
+  "relevant": {
+   "36": 1,
+   "56": 2,
+   "64": 1,
+   "66": 1,
+   "77": 1,
+   "78": 2,
+   "153": 1,
+   "200": 1,
+   "217": 1,
+   "223": 1,
+   "230": 1,
+   "250": 1,
+   "298": 1,
+   "308": 1,
+   "311": 1
+  }
+ },
+ {
+  "qid": "s12",
+  "type": "semantic",
+  "query": "promo code failed to apply at final checkout",
+  "relevant": {
+   "45": 2,
+   "51": 1,
+   "58": 1,
+   "68": 1,
+   "71": 1,
+   "79": 1,
+   "83": 1,
+   "218": 1,
+   "264": 1,
+   "328": 2,
+   "330": 2,
+   "331": 2
+  }
+ },
+ {
+  "qid": "s13",
+  "type": "semantic",
+  "query": "Checkout total differs from final bill amount",
+  "relevant": {
+   "45": 1,
+   "48": 2,
+   "51": 1,
+   "52": 1,
+   "53": 1,
+   "54": 1,
+   "57": 1,
+   "60": 1,
+   "61": 2,
+   "65": 1,
+   "69": 1,
+   "70": 1,
+   "73": 1,
+   "79": 1,
+   "149": 1,
+   "167": 1,
+   "309": 1,
+   "310": 2,
+   "311": 1,
+   "329": 1
+  }
+ },
+ {
+  "qid": "s14",
+  "type": "semantic",
+  "query": "Make app accessible for blind users using phone reader",
+  "relevant": {
+   "235": 1,
+   "242": 2,
+   "270": 1
+  }
+ },
+ {
+  "qid": "s15",
+  "type": "semantic",
+  "query": "how to view my monthly expense breakdown and categories",
+  "relevant": {
+   "47": 1,
+   "56": 1,
+   "57": 1,
+   "64": 1,
+   "67": 1,
+   "72": 1,
+   "74": 1,
+   "78": 1,
+   "81": 1,
+   "200": 1,
+   "217": 1,
+   "241": 2,
+   "244": 1,
+   "248": 1,
+   "250": 1
+  }
+ },
+ {
+  "qid": "s16",
+  "type": "semantic",
+  "query": "How to bookmark products without launching the web platform",
+  "relevant": {
+   "216": 1,
+   "219": 2,
+   "221": 1,
+   "222": 1,
+   "226": 1,
+   "256": 1,
+   "295": 1
+  }
+ },
+ {
+  "qid": "s17",
+  "type": "semantic",
+  "query": "how to pay corporate bills using direct wire",
+  "relevant": {
+   "64": 1,
+   "65": 1,
+   "66": 1,
+   "228": 1,
+   "230": 2,
+   "238": 1,
+   "244": 1,
+   "250": 1,
+   "296": 1,
+   "310": 1
+  }
+ },
+ {
+  "qid": "s18",
+  "type": "semantic",
+  "query": "How to log into iPhone app using facial recognition",
+  "relevant": {
+   "1": 1,
+   "3": 1,
+   "12": 1,
+   "13": 1,
+   "25": 1,
+   "32": 1,
+   "38": 1,
+   "220": 2,
+   "254": 1,
+   "320": 1,
+   "321": 1,
+   "322": 1,
+   "323": 1
+  }
+ },
+ {
+  "qid": "s19",
+  "type": "semantic",
+  "query": "Sync electronic invoices automatically with my bookkeeping app",
+  "relevant": {
+   "48": 1,
+   "54": 1,
+   "64": 1,
+   "66": 1,
+   "77": 1,
+   "234": 1,
+   "244": 1,
+   "250": 2,
+   "308": 1,
+   "311": 1
+  }
+ },
+ {
+  "qid": "s20",
+  "type": "semantic",
+  "query": "How to see power usage on appliance pages",
+  "relevant": {
+   "257": 2
+  }
+ },
+ {
+  "qid": "s21",
+  "type": "semantic",
+  "query": "Talk to a live customer support representative",
+  "relevant": {
+   "214": 1,
+   "233": 1,
+   "258": 1,
+   "261": 2,
+   "266": 1,
+   "278": 1,
+   "288": 1,
+   "289": 1,
+   "292": 1
+  }
+ },
+ {
+  "qid": "s22",
+  "type": "semantic",
+  "query": "How to change account profile name after getting married",
+  "relevant": {
+   "5": 1,
+   "9": 1,
+   "10": 1,
+   "20": 1,
+   "22": 1,
+   "294": 2
+  }
+ },
+ {
+  "qid": "s23",
+  "type": "semantic",
+  "query": "customer service telephone ordering hotline number",
+  "relevant": {
+   "6": 1,
+   "258": 1,
+   "265": 2,
+   "279": 1
+  }
+ },
+ {
+  "qid": "s24",
+  "type": "semantic",
+  "query": "What are your green initiatives and give-back programs?",
+  "relevant": {
+   "169": 1,
+   "224": 1,
+   "272": 2,
+   "283": 1
+  }
+ },
+ {
+  "qid": "s25",
+  "type": "semantic",
+  "query": "download product list for printing",
+  "relevant": {
+   "36": 1,
+   "217": 1,
+   "223": 1,
+   "247": 1,
+   "263": 1,
+   "295": 2
+  }
+ },
+ {
+  "qid": "s26",
+  "type": "semantic",
+  "query": "How old do you need to be to register?",
+  "relevant": {
+   "30": 1,
+   "252": 1,
+   "299": 2
+  }
+ },
+ {
+  "qid": "s27",
+  "type": "semantic",
+  "query": "How to dispose of used computers and devices",
+  "relevant": {
+   "7": 1,
+   "172": 1,
+   "283": 2
+  }
+ },
+ {
+  "qid": "s28",
+  "type": "semantic",
+  "query": "product broke quickly and need money back",
+  "relevant": {
+   "55": 1,
+   "80": 1,
+   "82": 1,
+   "140": 1,
+   "173": 1,
+   "174": 1,
+   "175": 2,
+   "183": 1,
+   "185": 1,
+   "186": 2,
+   "187": 1,
+   "188": 1,
+   "192": 1,
+   "193": 2,
+   "194": 1,
+   "198": 1,
+   "201": 1,
+   "206": 1,
+   "208": 2,
+   "211": 1,
+   "262": 1,
+   "310": 1,
+   "312": 1,
+   "313": 1,
+   "314": 1
+  }
+ },
+ {
+  "qid": "s29",
+  "type": "semantic",
+  "query": "return policy after product breaks during first week of use",
+  "relevant": {
+   "82": 1,
+   "148": 1,
+   "172": 1,
+   "175": 2,
+   "182": 1,
+   "185": 1,
+   "186": 2,
+   "191": 1,
+   "194": 1,
+   "196": 1,
+   "198": 1,
+   "201": 1,
+   "202": 1,
+   "203": 1,
+   "205": 1,
+   "206": 1,
+   "207": 1,
+   "209": 1,
+   "213": 1,
+   "262": 1,
+   "313": 1,
+   "314": 1
+  }
+ },
+ {
+  "qid": "s30",
+  "type": "semantic",
+  "query": "How to swap wrong size clothing item received",
+  "relevant": {
+   "173": 1,
+   "174": 2,
+   "176": 1,
+   "182": 1,
+   "186": 1,
+   "187": 1,
+   "189": 1,
+   "192": 1,
+   "195": 1,
+   "198": 1,
+   "312": 1,
+   "336": 1,
+   "338": 2,
+   "339": 1
+  }
+ },
+ {
+  "qid": "s31",
+  "type": "semantic",
+  "query": "Where is my missing shipping label for returns?",
+  "relevant": {
+   "130": 1,
+   "134": 1,
+   "141": 1,
+   "148": 1,
+   "150": 1,
+   "156": 1,
+   "184": 1,
+   "185": 1,
+   "187": 1,
+   "192": 1,
+   "202": 1,
+   "203": 1,
+   "204": 1,
+   "207": 2,
+   "209": 1,
+   "213": 2,
+   "301": 1,
+   "312": 1,
+   "313": 1,
+   "333": 1
+  }
+ },
+ {
+  "qid": "s32",
+  "type": "semantic",
+  "query": "How to get rid of weird manufacturing odor on product",
+  "relevant": {
+   "101": 1,
+   "102": 1,
+   "106": 1,
+   "108": 1,
+   "126": 1,
+   "158": 1,
+   "175": 1,
+   "180": 2,
+   "188": 1,
+   "197": 1,
+   "206": 1,
+   "208": 1,
+   "269": 1,
+   "285": 1
+  }
+ },
+ {
+  "qid": "s33",
+  "type": "semantic",
+  "query": "How to get money back on canceled credit card",
+  "relevant": {
+   "44": 1,
+   "50": 1,
+   "55": 1,
+   "62": 1,
+   "69": 1,
+   "73": 1,
+   "75": 2,
+   "80": 1,
+   "81": 1,
+   "175": 1,
+   "190": 2,
+   "201": 1,
+   "211": 1,
+   "308": 1,
+   "314": 1
+  }
+ },
+ {
+  "qid": "s34",
+  "type": "semantic",
+  "query": "How to swap my item for a bigger size",
+  "relevant": {
+   "174": 2,
+   "187": 1,
+   "189": 1,
+   "195": 1,
+   "198": 2,
+   "338": 1
+  }
+ },
+ {
+  "qid": "s35",
+  "type": "semantic",
+  "query": "Driver ignored contactless delivery instructions and knocked on door",
+  "relevant": {
+   "130": 1,
+   "131": 1,
+   "137": 1,
+   "138": 2,
+   "139": 1,
+   "140": 1,
+   "143": 1,
+   "146": 1,
+   "147": 1,
+   "150": 1,
+   "153": 1,
+   "154": 1,
+   "155": 1,
+   "157": 1,
+   "159": 1,
+   "162": 1,
+   "164": 1,
+   "167": 1,
+   "171": 1,
+   "199": 1,
+   "302": 1
+  }
+ },
+ {
+  "qid": "s36",
+  "type": "semantic",
+  "query": "Book exact package arrival time slot",
+  "relevant": {
+   "129": 1,
+   "134": 1,
+   "137": 1,
+   "139": 1,
+   "142": 1,
+   "143": 1,
+   "147": 1,
+   "150": 1,
+   "154": 1,
+   "159": 1,
+   "163": 2,
+   "164": 1,
+   "166": 1,
+   "231": 2,
+   "246": 1,
+   "251": 1,
+   "300": 1,
+   "301": 1,
+   "302": 1,
+   "303": 1,
+   "332": 1
+  }
+ },
+ {
+  "qid": "s37",
+  "type": "semantic",
+  "query": "How to track delivery delayed at international border",
+  "relevant": {
+   "130": 1,
+   "131": 1,
+   "136": 2,
+   "143": 1,
+   "144": 1,
+   "146": 1,
+   "147": 1,
+   "150": 1,
+   "154": 1,
+   "157": 1,
+   "159": 1,
+   "161": 1,
+   "165": 2,
+   "167": 1,
+   "171": 1,
+   "246": 1,
+   "300": 1,
+   "303": 1,
+   "332": 1
+  }
+ },
+ {
+  "qid": "s38",
+  "type": "semantic",
+  "query": "Overseas package stuck at sorting hub for weeks",
+  "relevant": {
+   "129": 2,
+   "130": 1,
+   "131": 1,
+   "132": 1,
+   "134": 1,
+   "136": 1,
+   "137": 1,
+   "139": 1,
+   "142": 1,
+   "150": 1,
+   "152": 1,
+   "162": 1,
+   "165": 2,
+   "171": 1,
+   "202": 1,
+   "300": 1,
+   "301": 1,
+   "303": 1,
+   "332": 1,
+   "334": 1,
+   "335": 2,
+   "339": 1
+  }
+ },
+ {
+  "qid": "s39",
+  "type": "semantic",
+  "query": "Tracking status stuck on shipping label created for days",
+  "relevant": {
+   "129": 1,
+   "131": 2,
+   "134": 1,
+   "135": 1,
+   "136": 1,
+   "147": 1,
+   "148": 2,
+   "154": 1,
+   "156": 1,
+   "159": 1,
+   "161": 1,
+   "165": 1,
+   "170": 2,
+   "199": 1,
+   "202": 1,
+   "213": 1,
+   "214": 1,
+   "300": 2,
+   "314": 1,
+   "332": 2,
+   "333": 2,
+   "334": 2,
+   "335": 2
+  }
+ },
+ {
+  "qid": "s40",
+  "type": "semantic",
+  "query": "Package delivered to parcel locker with no access code",
+  "relevant": {
+   "129": 1,
+   "130": 1,
+   "131": 1,
+   "134": 1,
+   "136": 1,
+   "137": 1,
+   "139": 1,
+   "142": 1,
+   "147": 1,
+   "150": 1,
+   "152": 1,
+   "155": 1,
+   "157": 1,
+   "158": 1,
+   "162": 1,
+   "164": 2,
+   "171": 1,
+   "301": 1,
+   "332": 1
+  }
+ },
+ {
+  "qid": "s41",
+  "type": "semantic",
+  "query": "Shipped ceramics arrived shattered because packaging lacked proper handling warnings",
+  "relevant": {
+   "133": 1,
+   "137": 1,
+   "140": 2,
+   "151": 2,
+   "173": 1,
+   "199": 2,
+   "208": 1
+  }
+ },
+ {
+  "qid": "s42",
+  "type": "semantic",
+  "query": "Why are push alerts delayed on my mobile device?",
+  "relevant": {
+   "3": 1,
+   "4": 1,
+   "34": 1,
+   "92": 2,
+   "128": 1,
+   "161": 1,
+   "214": 1
+  }
+ },
+ {
+  "qid": "s43",
+  "type": "semantic",
+  "query": "how to fix espresso maker error code E4",
+  "relevant": {
+   "123": 2
+  }
+ },
+ {
+  "qid": "s44",
+  "type": "semantic",
+  "query": "Wireless connection disconnects hourly needing hardware reboot",
+  "relevant": {
+   "88": 1,
+   "89": 1,
+   "114": 1,
+   "118": 1,
+   "122": 2,
+   "316": 2,
+   "317": 2,
+   "318": 2,
+   "319": 2,
+   "324": 1,
+   "327": 1
+  }
+ },
+ {
+  "qid": "s45",
+  "type": "semantic",
+  "query": "Why does my lens keep pulsing in low light?",
+  "relevant": {
+   "93": 1,
+   "98": 2,
+   "121": 1
+  }
+ },
+ {
+  "qid": "s46",
+  "type": "semantic",
+  "query": "Laptop won't charge through type c port anymore",
+  "relevant": {
+   "86": 1,
+   "91": 1,
+   "96": 1,
+   "106": 1,
+   "109": 2,
+   "111": 1,
+   "112": 1,
+   "126": 1,
+   "172": 1
+  }
+ },
+ {
+  "qid": "s47",
+  "type": "semantic",
+  "query": "live camera works but movement notifications fail",
+  "relevant": {
+   "34": 1,
+   "92": 1,
+   "93": 1,
+   "98": 1,
+   "121": 1,
+   "128": 2,
+   "325": 2
+  }
+ },
+ {
+  "qid": "s48",
+  "type": "semantic",
+  "query": "Dashcam saving corrupted video clips despite working memory card",
+  "relevant": {
+   "93": 1,
+   "98": 1,
+   "107": 1,
+   "121": 2,
+   "128": 1,
+   "325": 1
+  }
+ },
+ {
+  "qid": "s49",
+  "type": "semantic",
+  "query": "Download past order list as spreadsheet",
+  "relevant": {
+   "35": 1,
+   "36": 1,
+   "56": 1,
+   "217": 2,
+   "223": 1,
+   "229": 1,
+   "247": 1,
+   "249": 1,
+   "250": 1,
+   "278": 1
+  }
+ }
+]

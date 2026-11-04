@@ -1,0 +1,4 @@
+# temperature: 1.2 | top_p: 0.9 | time: 1.6s | cost: $0.000007
+Here's a catchy 3-sentence marketing pitch for Git-Burn:
+
+"Get your repository under control with Git-Burn, the guilt-free solution for DevOps engineers everywhere. This automated branch sweeper helps you tackle clutter and keep your code organized by automatically deleting inactive branches after 30 days and sending Slack notifications to the last committer. Say goodbye to branch sprawl and hello to a cleaner, more efficient workflow - with Git-Burn, you can focus on writing code, not managing your commit history!"

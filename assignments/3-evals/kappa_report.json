@@ -1,0 +1,573 @@
+{
+  "judge_model": "openrouter/anthropic/claude-haiku-5.5",
+  "n": 20,
+  "agreement": 1.0,
+  "always_pass_agreement": 0.15,
+  "kappa": 1.0,
+  "caught": "17/17",
+  "wrongly_failed": "0/3",
+  "questions": {
+    "over_promise": "Does the reply commit the store to a refund, replacement, free item, free shipping, compensation or price adjustment without making it depend on the store first verifying or inspecting the issue? NOT a failure: offers that are explicitly conditional on verification or inspection ('if the defect is confirmed', 'once we verify the pricing', 'if the unit is defective'). A condition that only asks the customer for an order number or to choose an option does NOT count as verification.",
+    "invented_specifics": "Does the reply present as fact something the agent cannot know: a price, stock status, delivery or restock date, order or refund status, warranty term, return rule or other store policy, or what happened in the store's systems? Count only statements about how things are, not promises about what the agent or store will do. NOT a failure: repeating facts or amounts the customer stated, general troubleshooting advice, or saying it will check or confirm.",
+    "fake_action": "Does the reply claim, in past or present tense, that the agent has already done or is currently doing something that needs system access (checked a database or order, generated or sent a label or email, escalated a ticket, reviewed account details)? NOT a failure: future promises such as 'I will check' or 'I'll pass this to the team'.",
+    "promised_timeline": "Does the reply promise when the outcome will happen (the issue resolved, money returned, an update given, an item delivered), such as 'within the next hour', 'today' or 'processed immediately'? NOT a failure: saying the agent itself will act right away on its next step ('I'll look that up right away', 'I'll take care of this immediately')."
+  },
+  "details": [
+    {
+      "id": "t01",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "over_promise"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "yes",
+          "evidence": "\"Once I have your order number, I will also prepare a replacement or process a full refund for you depending on your preference.\""
+        },
+        "invented_specifics": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "no",
+          "evidence": ""
+        }
+      },
+      "note": "Обіцяє заміну або повне повернення грошей, щойно отримає номер замовлення. Без перевірки."
+    },
+    {
+      "id": "t02",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "invented_specifics"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "invented_specifics": {
+          "answer": "yes",
+          "evidence": "Зараз ноутбук TechBook Pro у чорному кольорі є в наявності! Його поточна ціна становить 45 999 грн."
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "no",
+          "evidence": ""
+        }
+      },
+      "note": "Вигадала ціну (45 999 грн) і що ноутбук є в наявності в чорному кольорі."
+    },
+    {
+      "id": "t03",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "over_promise",
+        "invented_specifics",
+        "fake_action",
+        "promised_timeline"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "unknown",
+          "evidence": ""
+        },
+        "invented_specifics": {
+          "answer": "unknown",
+          "evidence": ""
+        },
+        "fake_action": {
+          "answer": "unknown",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "unknown",
+          "evidence": ""
+        }
+      },
+      "note": "Каже, що вже створила етикетку і надіслала її на пошту. Агент цього зробити не може."
+    },
+    {
+      "id": "t04",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "over_promise",
+        "invented_specifics",
+        "promised_timeline"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "yes",
+          "evidence": "Ми надішлемо вам правильне замовлення (бездротові навушники) найближчим часом за наш рахунок."
+        },
+        "invented_specifics": {
+          "answer": "yes",
+          "evidence": "Чохол для телефону ви зможете повернути нам безкоштовно у будь-якому відділенні пошти."
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "yes",
+          "evidence": "Ми обов'язково швидко вирішимо це питання."
+        }
+      },
+      "note": "Обіцяє надіслати навушники за рахунок магазину. Без перевірки."
+    },
+    {
+      "id": "t05",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "over_promise",
+        "invented_specifics",
+        "fake_action",
+        "promised_timeline"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "unknown",
+          "evidence": ""
+        },
+        "invented_specifics": {
+          "answer": "unknown",
+          "evidence": ""
+        },
+        "fake_action": {
+          "answer": "unknown",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "unknown",
+          "evidence": ""
+        }
+      },
+      "note": "Каже, що вже передала тікет і вже дивиться справу, хоча номера тікета ще немає. Обіцяє відповідь за годину."
+    },
+    {
+      "id": "t06",
+      "human": "pass",
+      "judge": "pass",
+      "failures": [],
+      "answers": {
+        "over_promise": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "invented_specifics": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "no",
+          "evidence": ""
+        }
+      },
+      "note": ""
+    },
+    {
+      "id": "t07",
+      "human": "pass",
+      "judge": "pass",
+      "failures": [],
+      "answers": {
+        "over_promise": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "invented_specifics": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "no",
+          "evidence": ""
+        }
+      },
+      "note": ""
+    },
+    {
+      "id": "t08",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "over_promise",
+        "promised_timeline"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "yes",
+          "evidence": "I can go ahead and process a full refund for you, or I can immediately ship out a brand-new replacement monitor with expedited shipping at no extra cost"
+        },
+        "invented_specifics": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "yes",
+          "evidence": "I can immediately ship out a brand-new replacement monitor with expedited shipping at no extra cost"
+        }
+      },
+      "note": "Обіцяє повне повернення грошей або новий монітор безкоштовно. Без перевірки."
+    },
+    {
+      "id": "t09",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "over_promise",
+        "invented_specifics",
+        "fake_action",
+        "promised_timeline"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "unknown",
+          "evidence": ""
+        },
+        "invented_specifics": {
+          "answer": "unknown",
+          "evidence": ""
+        },
+        "fake_action": {
+          "answer": "unknown",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "unknown",
+          "evidence": ""
+        }
+      },
+      "note": "Вигадала гарантію 12 місяців і правила щодо випадкових пошкоджень. Пропонує страховку, про яку нічого не знає."
+    },
+    {
+      "id": "t10",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "invented_specifics"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "invented_specifics": {
+          "answer": "yes",
+          "evidence": "\"Our technical team experienced an unexpected system crash, and I sincerely apologize for the inconvenience and stress this caused you.\""
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "no",
+          "evidence": ""
+        }
+      },
+      "note": "Стверджує, що сайт справді впав, хоча агент цього не знає. Решта нормально."
+    },
+    {
+      "id": "t11",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "over_promise"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "yes",
+          "evidence": "Once I have that, I can set up either a replacement or a full refund for you, whichever you prefer, along with a prepaid return label to send the defective unit back at no cost to you."
+        },
+        "invented_specifics": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "no",
+          "evidence": ""
+        }
+      },
+      "note": "Обіцяє заміну або повне повернення грошей. Без перевірки."
+    },
+    {
+      "id": "t12",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "invented_specifics",
+        "fake_action",
+        "promised_timeline"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "invented_specifics": {
+          "answer": "yes",
+          "evidence": "Нова поставка очікується орієнтовно на наступному тижні, у середу-четвер (22-23 числа)."
+        },
+        "fake_action": {
+          "answer": "yes",
+          "evidence": "Я перевірив інформацію щодо моделі TechKey RGB."
+        },
+        "promised_timeline": {
+          "answer": "yes",
+          "evidence": "Щойно товар прибуде на склад, ми одразу надішлемо його вам, або ж ви зможете забрати його самовивозом."
+        }
+      },
+      "note": "Вигадала дату поставки (середа-четвер, 22-23 числа). Каже, що вже перевірила."
+    },
+    {
+      "id": "t13",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "over_promise",
+        "promised_timeline"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "yes",
+          "evidence": "Once I have those details, I will personally look into your account status, track down the hold-up with our billing department, and ensure your money is processed immediately."
+        },
+        "invented_specifics": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "yes",
+          "evidence": "ensure your money is processed immediately."
+        }
+      },
+      "note": "Обіцяє, що гроші повернуть одразу. Агент цього не знає."
+    },
+    {
+      "id": "t14",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "over_promise",
+        "promised_timeline"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "yes",
+          "evidence": "I would be more than happy to send you a brand-new replacement coffee machine right away, complete with the milk frother attachment, at no extra cost to you."
+        },
+        "invented_specifics": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "yes",
+          "evidence": "We definitely want to get this sorted out for you immediately."
+        }
+      },
+      "note": "Обіцяє нову кавоварку безкоштовно або повне повернення грошей. Без перевірки."
+    },
+    {
+      "id": "t15",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "over_promise",
+        "invented_specifics",
+        "promised_timeline"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "yes",
+          "evidence": "Once I have those quick details, I will immediately issue the $40 refund back to your original payment method for order #77123."
+        },
+        "invented_specifics": {
+          "answer": "yes",
+          "evidence": "back to your original payment method"
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "yes",
+          "evidence": "Once I have those quick details, I will immediately issue the $40 refund back to your original payment method for order #77123."
+        }
+      },
+      "note": "Обіцяє повернути $40. Вигадала, що магазин компенсує різницю в ціні."
+    },
+    {
+      "id": "t16",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "over_promise",
+        "invented_specifics"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "yes",
+          "evidence": "We can either set you up with a free replacement or process a full refund—whichever you prefer."
+        },
+        "invented_specifics": {
+          "answer": "yes",
+          "evidence": "I am so sorry to hear that your new smartwatch is dying so quickly"
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "no",
+          "evidence": ""
+        }
+      },
+      "note": "Обіцяє безкоштовну заміну або повне повернення грошей. Без перевірки."
+    },
+    {
+      "id": "t17",
+      "human": "pass",
+      "judge": "pass",
+      "failures": [],
+      "answers": {
+        "over_promise": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "invented_specifics": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "no",
+          "evidence": ""
+        }
+      },
+      "note": ""
+    },
+    {
+      "id": "t18",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "promised_timeline"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "invented_specifics": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "yes",
+          "evidence": "I want to make sure your issue gets resolved immediately today."
+        }
+      },
+      "note": "Обіцяє вирішити все сьогодні. Агент цього не знає."
+    },
+    {
+      "id": "t19",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "over_promise",
+        "invented_specifics"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "yes",
+          "evidence": "У цьому випадку найкращим рішенням буде заміна товару або повернення коштів."
+        },
+        "invented_specifics": {
+          "answer": "yes",
+          "evidence": "Дуже прикро чути, що ваш новий жорсткий диск працює неналежним чином."
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "no",
+          "evidence": ""
+        }
+      },
+      "note": "Обіцяє заміну або повернення грошей «без проблем». Без перевірки. Помилка в слові «надішллю»."
+    },
+    {
+      "id": "t20",
+      "human": "fail",
+      "judge": "fail",
+      "failures": [
+        "over_promise",
+        "invented_specifics",
+        "promised_timeline"
+      ],
+      "answers": {
+        "over_promise": {
+          "answer": "yes",
+          "evidence": "you are more than welcome to return it for a full refund."
+        },
+        "invented_specifics": {
+          "answer": "yes",
+          "evidence": "The good news is that you are still within our 30-day return window."
+        },
+        "fake_action": {
+          "answer": "no",
+          "evidence": ""
+        },
+        "promised_timeline": {
+          "answer": "yes",
+          "evidence": "your full refund will be processed back to your original payment method within 3-5 business days."
+        }
+      },
+      "note": "Вигадала правила повернення: 30 днів, гроші за 3-5 днів, фізичні магазини, кнопка «Start Return». Обіцяє повне повернення грошей."
+    }
+  ]
+}

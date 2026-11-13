@@ -20,7 +20,7 @@ for _name in ("sentence_transformers", "transformers", "huggingface_hub"):
 
 # --- Models ---------------------------------------------------------------
 MODEL = "openrouter:google/gemini-3.5-flash-lite"
-JUDGE_MODEL = "openrouter:openai/gpt-5.6-terra"
+JUDGE_MODEL = "openrouter:openai/gpt-6.1-terra"
 ENCODER = "paraphrase-multilingual-MiniLM-L12-v2"
 
 # --- Retrieval ------------------------------------------------------------

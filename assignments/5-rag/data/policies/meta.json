@@ -1,0 +1,52 @@
+[
+ {
+  "doc_id": "dobrochesnist_2025",
+  "title": "Кодекс академічної доброчесності ВНУ",
+  "effective_from": "2025-09-01",
+  "superseded_by": null,
+  "file": "policies/dobrochesnist_2025.pdf"
+ },
+ {
+  "doc_id": "hurtozhytky_2025",
+  "title": "Правила поселення і проживання в студентських гуртожитках",
+  "effective_from": "2025-06-01",
+  "superseded_by": null,
+  "file": "policies/hurtozhytky_2025.pdf"
+ },
+ {
+  "doc_id": "likvidatsiia_2024",
+  "title": "Положення про порядок ліквідації академічної заборгованості",
+  "effective_from": "2024-04-01",
+  "superseded_by": "likvidatsiia_2025",
+  "file": "policies/likvidatsiia_2024.pdf"
+ },
+ {
+  "doc_id": "likvidatsiia_2025",
+  "title": "Порядок ліквідації академічних заборгованостей у ВНУ",
+  "effective_from": "2025-09-01",
+  "supersedes": "likvidatsiia_2024",
+  "superseded_by": null,
+  "file": "policies/likvidatsiia_2025.pdf"
+ },
+ {
+  "doc_id": "stypendii_2025",
+  "title": "Положення про призначення та виплату стипендій",
+  "effective_from": "2025-09-01",
+  "superseded_by": null,
+  "file": "policies/stypendii_2025.pdf"
+ },
+ {
+  "doc_id": "vybirkovi_2025",
+  "title": "Положення про порядок вибору навчальних дисциплін",
+  "effective_from": "2025-03-01",
+  "superseded_by": null,
+  "file": "policies/vybirkovi_2025.pdf"
+ },
+ {
+  "doc_id": "zayavy_2025",
+  "title": "Порядок подання заяв і отримання довідок",
+  "effective_from": "2025-09-01",
+  "superseded_by": null,
+  "file": "policies/zayavy_2025.pdf"
+ }
+]

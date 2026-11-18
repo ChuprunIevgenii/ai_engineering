@@ -1,0 +1,2 @@
+# temperature: 0.1 | top_p: 0.9 | time: 5.0s | cost: $0.001870
+Stop babysitting dead branches. Git-Burn quietly torches anything untouched for 30 days and pings the last committer on Slack so you never have to. Set it once, forget it forever—your repo stays clean while you stay gloriously lazy.

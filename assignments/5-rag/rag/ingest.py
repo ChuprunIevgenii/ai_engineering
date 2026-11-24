@@ -38,7 +38,7 @@ def policy_metadata(meta: dict) -> dict:
     The text of the 2024 retake policy never says it was replaced; only meta.json does.
     Visible on q20 and q22: without it stage 3 cannot tell the 2024 edition from the 2025 one.
     """
-    raise NotImplementedError("TODO 3a: ingest.policy_metadata")
+    return {"effective_from": meta["effective_from"], "superseded_by": meta.get("superseded_by")}
 
 
 def chunk_policy_pages(meta: dict) -> list[Chunk]:

@@ -63,8 +63,39 @@ def normalize_code(code: str) -> str:
     Anything that does not look like a code comes back stripped and upper-cased, so get_course can say
     «no such course» instead of crashing.
     """
-    raise NotImplementedError("TODO 4a: catalog.normalize_code")
+    m = re.match(r"^\s*([А-ЯҐЄІЇа-яґєії]{2})\s*[-–—]?\s*(\d+)\s*$", code)
+    
+    if not m:
+        return code.strip().upper()
+    return f"{m.group(1).upper()}-{m.group(2)}"
 
+def _name_words(text: str) -> list[str]:
+    """Words of a name, split on spaces and dots, lower-cased: 'Олійник А. М.' -> ['олійник', 'а', 'м']."""
+    return re.findall(r"[^\s.]+", text.lower())
+
+def name_matches(query: str, full_name: str, any_order: bool = False) -> bool:
+    """Each query word, cut to a 5-letter stem, starts a word of the full name: 'Гордієнка' and
+    'Гордієнко С. П.' match 'Гордієнко Світлана Петрівна'; 'Харченко' does not match 'Захарченко'.
+    By default by position (surname, name, patronymic); any_order=True lets the words come in any
+    order ('Василь Головко'), each query word taking a different word of the name."""
+    
+    q = [w[:5] for w in _name_words(query)]
+    words = _name_words(full_name)
+    
+    if not 0 < len(q) <= len(words):
+        return False
+    if not any_order:
+        return all(words[i].startswith(s) for i, s in enumerate(q))
+    
+    free = list(words)
+    
+    for s in sorted(q, key=len, reverse=True):
+        hit = next((w for w in free if w.startswith(s)), None)
+        if hit is None:
+            return False
+        free.remove(hit)
+    
+    return True
 
 def filter_courses(catalog: dict[str, Course], faculty: str | None = None, year: int | None = None,
                    semester: str | None = None, kind: str | None = None, teacher: str | None = None,
@@ -77,4 +108,11 @@ def filter_courses(catalog: dict[str, Course], faculty: str | None = None, year:
     Visible on q13, q14, q15: an exact count over all 396 courses, which no top-k can give.
     On q15 the model passes the full name, and the surname is shared by five teachers.
     """
-    raise NotImplementedError("TODO 4b: catalog.filter_courses")
+    rows = [c for c in catalog.values()
+            if (faculty is None or c.faculty == faculty)
+            and (year is None or c.year == year)
+            and (semester is None or c.semester == semester)
+            and (kind is None or c.kind == kind)
+            and (credits is None or c.credits == credits)
+            and (teacher is None or name_matches(teacher, c.teacher))]
+    return sorted(rows, key=lambda c: c.code)

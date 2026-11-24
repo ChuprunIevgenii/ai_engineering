@@ -83,7 +83,7 @@ def search(ctx: RunContext[Deps], query: str) -> str:
 
     Повертає уривки з міткою джерела в квадратних дужках; цитуй цю мітку.
     """
-    raise NotImplementedError("TODO 2: tools.search")
+    return fmt(ctx.deps, ctx.deps.corpus.index.search(query))
 
 
 # --------------------------------------------------------------------------- stage 3
@@ -100,13 +100,16 @@ def search_policies(ctx: RunContext[Deps], query: str, include_superseded: bool 
     """Пошук по положеннях і правилах ВНУ (PDF). За замовчуванням лише чинні редакції;
     include_superseded=True додає редакції, що втратили чинність. У виводі — дата чинності.
     """
-    raise NotImplementedError("TODO 3b: tools.search_policies")
+    where = (lambda c: c.kind == "policy") if include_superseded else is_current
+    hits = ctx.deps.corpus.index.search(query, k=6, where=where)
+    return fmt(ctx.deps, hits, with_dates=True)
 
 
 # TODO 3c: the same search over everything that is not a policy: course cards, staff pages, news.
 def search_pages(ctx: RunContext[Deps], query: str) -> str:
     """Пошук по сторінках факультетів: картки дисциплін, сторінки викладачів, новини."""
-    raise NotImplementedError("TODO 3c: tools.search_pages")
+    
+    return fmt(ctx.deps, ctx.deps.corpus.index.search(query, where=lambda c: c.kind != "policy"))
 
 
 # --------------------------------------------------------------------------- stage 4
@@ -118,7 +121,12 @@ def search_pages(ctx: RunContext[Deps], query: str) -> str:
 # prerequisites of 60 other cards, so search alone ranks the right card low.
 def get_course(ctx: RunContext[Deps], code: str) -> str:
     """Картка дисципліни за точним кодом, наприклад «ПЗ-204»."""
-    raise NotImplementedError("TODO 4c: tools.get_course")
+    norm = catalog.normalize_code(code)
+    
+    if norm not in ctx.deps.corpus.catalog:
+        return f"Дисципліни з кодом {norm} немає в каталозі."
+    card = next(c for c in ctx.deps.corpus.index.chunks if c.kind == "course" and c.source == norm)
+    return fmt(ctx.deps, [card])
 
 
 # TODO 4d: staff pages (ctx.deps.corpus.staff) whose title matches every word of `name`. Compare stems,
@@ -128,7 +136,15 @@ def get_course(ctx: RunContext[Deps], code: str) -> str:
 # patronymic «Андріївна». Record each page under its title; say so when nobody matches. Visible on q11, q31.
 def get_staff(ctx: RunContext[Deps], name: str) -> str:
     """Сторінка викладача за прізвищем або ПІБ: кабінет, консультації, пошта."""
-    raise NotImplementedError("TODO 4d: tools.get_staff")
+    staff = [(c, " ".join(w for w in c.title.split() if not w.endswith(".")))
+             for c in ctx.deps.corpus.staff.values()]
+    
+    pages = ([c for c, full in staff if catalog.name_matches(name, full)]
+             or [c for c, full in staff if catalog.name_matches(name, full, any_order=True)])
+    
+    if not pages:
+        return f"Викладача «{name}» не знайдено."
+    return fmt(ctx.deps, pages)
 
 
 # TODO 4e: filter_courses (TODO 4b) over ctx.deps.corpus.catalog; the output is the label line «[каталог]»,
@@ -144,7 +160,11 @@ def query_catalog(ctx: RunContext[Deps], faculty: Faculty | None = None, year: i
     Для питань «скільки» і «які саме» — точне число з усього каталогу, а не з top-k.
     Перший рядок — мітка джерела в квадратних дужках; цитуй цю мітку.
     """
-    raise NotImplementedError("TODO 4e: tools.query_catalog")
+    rows = catalog.filter_courses(ctx.deps.corpus.catalog, faculty=faculty, year=year, semester=semester, kind=kind, teacher=teacher, credits=credits)
+    lines = [f"{c.code} {c.name} — {c.faculty}, {c.year} курс, {c.semester}, {c.kind}, "f"{c.credits} кредитів ЄКТС, викладач: {c.teacher}" for c in rows]
+    text = f"Знайдено дисциплін: {len(rows)}\n" + "\n".join(lines)
+    
+    return "[каталог]\n" + record(ctx.deps, "каталог", text)
 
 
 # --------------------------------------------------------------------------- stage 5
@@ -159,7 +179,12 @@ def my_profile(ctx: RunContext[Deps]) -> str:
 
     Перший рядок — мітка джерела в квадратних дужках; цитуй цю мітку.
     """
-    raise NotImplementedError("TODO 5: tools.my_profile")
+    rec = api.get_student_record(ctx.deps.corpus.students, ctx.deps.student_id)
+    
+    if rec is None:
+        return "Профіль поточного студента не знайдено."
+    label = "профіль студента"
+    return f"[{label}]\n" + record(ctx.deps, label, json.dumps(rec, ensure_ascii=False))
 
 
 def get_student(ctx: RunContext[Deps], student_id: str) -> str:
